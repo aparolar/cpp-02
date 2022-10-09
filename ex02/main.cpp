@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:27 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/18 14:00:47 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/10/09 11:50:52 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,11 @@ int	main(void)
 	std::cout << "a >= a is " << (a <= a) << std::endl;
 	std::cout << "a == a is " << (a == a) << std::endl;
 	std::cout << "a != a is " << (a != a) << std::endl;
+	std::cout << "a is " << a << std::endl;	
+	std::cout << "a++    is " << a++ << std::endl;
+	std::cout << "a--    is " << a-- << std::endl;
+	std::cout << "++a	 is " << ++a << std::endl;
+	std::cout << "--a    is " << --a << std::endl;
 	std::cout << "min(a, b) is " << Fixed::min(a, b) << std::endl;
 	std::cout << "min(c, d) is " << Fixed::min(c, d) << std::endl;
 	std::cout << "max(a, b) is " << Fixed::max(a, b) << std::endl;
@@ -46,3 +51,4 @@ int	main(void)
 
 	return (0);
 }
+

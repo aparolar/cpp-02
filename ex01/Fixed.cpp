@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/18 12:20:01 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/10/07 11:34:11 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,3 +72,4 @@ std::ostream &operator << (std::ostream &out, const Fixed &fixed)
 	out << fixed.toFloat();
 	return (out);
 }
+

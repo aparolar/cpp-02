@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/18 10:41:11 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/10/05 12:36:38 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 Fixed::Fixed(void)
 {
+	value = 0;
 	std::cout << "Default constructor called" << std::endl;
 }
 

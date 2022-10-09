@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/18 13:57:40 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/10/09 12:06:42 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -139,8 +139,35 @@ bool	Fixed::operator != (Fixed const &toCompare)
 	return (getRawBits() != toCompare.getRawBits());
 }
 
+Fixed&	Fixed::operator ++ ()
+{
+	_value++;
+	return(*this);
+}
+
+Fixed&	Fixed::operator -- ()
+{
+	_value--;
+	return (*this);
+}
+
+Fixed	Fixed::operator ++ (int)
+{
+	Fixed tmp(*this);
+	_value++;
+	return (tmp);
+}
+
+Fixed	Fixed::operator -- (int)
+{
+	Fixed tmp(*this);
+	_value++;
+	return (tmp);
+}
+
 std::ostream &operator << (std::ostream &out, const Fixed &fixed)
 {
 	out << fixed.toFloat();
 	return (out);
 }
+

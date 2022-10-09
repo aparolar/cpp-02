@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:07 by aparolar          #+#    #+#             */
-/*   Updated: 2022/07/18 13:56:22 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/10/09 12:07:40 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,10 @@ class Fixed
 		bool	operator <= (Fixed const &toCompare);
 		bool	operator == (Fixed const &toCompare);
 		bool	operator != (Fixed const &toCompare);
+		Fixed&	operator ++ ();
+		Fixed&	operator -- ();
+		Fixed	operator ++ (int);
+		Fixed	operator -- (int);
 
 		void	setRawBits(const int raw);
 		int		getRawBits(void) const;
