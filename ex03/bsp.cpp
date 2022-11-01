@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   bsp.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aparolar <aparolar@student.42madrid>       +#+  +:+       +#+        */
+/*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:46:37 by aparolar          #+#    #+#             */
-/*   Updated: 2022/10/10 12:58:02 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/11/01 13:36:55 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
+
+/* Formula to find a point
+w1 = (e.x * (a.y - p.y) + e.y * (p.x - a.x)) / (d.x * e.y - d.y * e.x);
+w2 = (p.y - a.y - w1 * d.y) / e.y;
+
+pointInTriangle = (w1 >= 0.0) && (w2 >= 0.0) && ((w1 + w2) <= 1.0);
+*/
 
 bool	bsp(Point const a, Point const b, Point const c, Point const point)
 {
