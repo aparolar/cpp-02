@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:02:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/10/09 12:06:42 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:50:54 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,7 +161,7 @@ Fixed	Fixed::operator ++ (int)
 Fixed	Fixed::operator -- (int)
 {
 	Fixed tmp(*this);
-	_value++;
+	_value--;
 	return (tmp);
 }
 

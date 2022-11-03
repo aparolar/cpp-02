@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 12:46:37 by aparolar          #+#    #+#             */
-/*   Updated: 2022/11/01 13:36:55 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/11/02 13:58:22 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ bool	bsp(Point const a, Point const b, Point const c, Point const point)
 	
 	w1 = ((ex * (a.get_y() - (point.get_y()))) + (ey * (point.get_x() - a.get_x()))) / ((dx * ey) - (dy * ex));
 	w2 = (point.get_y() - a.get_y() - (w1 * dy)) / ey;
+	std::cout << "w1 = " << w1 << " w2 " << w2 << std::endl;
 	
 	return ((w1 >= 0) && (w2 >= 0) && ((w1 + w2) <= 1));
 }
